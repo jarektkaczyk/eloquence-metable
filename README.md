@@ -1,6 +1,6 @@
 # Sofa/Eloquence
 
-[![Build Status](https://travis-ci.org/jarektkaczyk/eloquence-metable.svg)](https://travis-ci.org/jarektkaczyk/eloquence-metable) [![Coverage Status](https://coveralls.io/repos/jarektkaczyk/eloquence-metable/badge.svg)](https://coveralls.io/r/jarektkaczyk/eloquence-metable) [![Code Quality](https://scrutinizer-ci.com/g/jarektkaczyk/eloquence-metable/badges/quality-score.png)](https://scrutinizer-ci.com/g/jarektkaczyk/eloquence-metable) [![Downloads](https://poser.pugx.org/sofa/eloquence-metable/downloads)](https://packagist.org/packages/sofa/eloquence-metable) [![stable](https://poser.pugx.org/sofa/eloquence-metable/v/stable.svg)](https://packagist.org/packages/sofa/eloquence-metable)
+[![GitHub Tests Action Status](https://github.com/jarektkaczyk/eloquence-metable/workflows/Tests/badge.svg)](https://github.com/jarektkaczyk/eloquence-metable/actions?query=workflow%3Atests+branch%3Amaster) [![Coverage Status](https://coveralls.io/repos/jarektkaczyk/eloquence-metable/badge.svg)](https://coveralls.io/r/jarektkaczyk/eloquence-metable) [![Code Quality](https://scrutinizer-ci.com/g/jarektkaczyk/eloquence-metable/badges/quality-score.png)](https://scrutinizer-ci.com/g/jarektkaczyk/eloquence-metable) [![Downloads](https://poser.pugx.org/sofa/eloquence-metable/downloads)](https://packagist.org/packages/sofa/eloquence-metable) [![stable](https://poser.pugx.org/sofa/eloquence-metable/v/stable.svg)](https://packagist.org/packages/sofa/eloquence-metable)
 
 Easy and flexible extensions for the [Eloquent ORM](https://laravel.com/docs/eloquent).
 
