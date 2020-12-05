@@ -52,7 +52,7 @@ trait Metable
      * Determine wheter method called on the query is customizable by this trait.
      *
      * @param  string  $method
-     * @return boolean
+     * @return bool
      */
     protected function isMetaQueryable($method)
     {
@@ -197,7 +197,6 @@ trait Metable
     {
         return $query->getQuery()->select("{$alias}.meta_value")->{$method}("{$alias}.meta_value");
     }
-
 
     /**
      * Join meta attributes table.
@@ -374,7 +373,7 @@ trait Metable
      * Determine whether meta attribute is allowed for the model.
      *
      * @param  string $key
-     * @return boolean
+     * @return bool
      */
     public function allowsMeta($key)
     {
@@ -387,7 +386,7 @@ trait Metable
      * Determine whether meta attribute exists on the model.
      *
      * @param  string $key
-     * @return boolean
+     * @return bool
      */
     public function hasMeta($key)
     {
@@ -404,6 +403,7 @@ trait Metable
     {
         return $this->getMetaAttributes()->getValue($key);
     }
+
     /**
      * Get meta attribute values by group.
      *
@@ -414,6 +414,7 @@ trait Metable
     {
         return $this->getMetaAttributes()->getMetaByGroup($group);
     }
+
     /**
      * Set meta attribute.
      *

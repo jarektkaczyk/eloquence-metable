@@ -2,7 +2,6 @@
 
 namespace Sofa\Eloquence\Metable;
 
-use InvalidArgumentException;
 use Illuminate\Database\Eloquent\Collection;
 use Sofa\Eloquence\Contracts\AttributeBag as AttributeBagContract;
 
@@ -123,6 +122,7 @@ class AttributeBag extends Collection implements AttributeBagContract
             return $attribute->getValue();
         }
     }
+
     /**
      * Get attribute values by group.
      *
@@ -133,6 +133,7 @@ class AttributeBag extends Collection implements AttributeBagContract
     {
         return $this->where('meta_group', $group);
     }
+
     /**
      * Get collection as key-value array.
      *
@@ -209,7 +210,7 @@ class AttributeBag extends Collection implements AttributeBagContract
      * Handle isset calls.
      *
      * @param  string  $key
-     * @return boolean
+     * @return bool
      */
     public function __isset($key)
     {

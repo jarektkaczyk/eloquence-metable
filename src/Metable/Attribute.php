@@ -36,7 +36,7 @@ class Attribute extends Model implements AttributeContract
     /**
      * Indicates if the model should be timestamped.
      *
-     * @var boolean
+     * @var bool
      */
     public $timestamps = false;
 
@@ -51,9 +51,9 @@ class Attribute extends Model implements AttributeContract
      * @var array
      */
     protected $getterMutators = [
-        'array'      => 'json_decode',
-        'StdClass'   => 'json_decode',
-        'DateTime'   => 'asDateTime',
+        'array' => 'json_decode',
+        'StdClass' => 'json_decode',
+        'DateTime' => 'asDateTime',
         Model::class => 'unserialize',
     ];
 
@@ -61,9 +61,9 @@ class Attribute extends Model implements AttributeContract
      * @var array
      */
     protected $setterMutators = [
-        'array'      => 'json_encode',
-        'StdClass'   => 'json_encode',
-        'DateTime'   => 'fromDateTime',
+        'array' => 'json_encode',
+        'StdClass' => 'json_encode',
+        'DateTime' => 'fromDateTime',
         Model::class => 'serialize',
     ];
 
@@ -172,6 +172,7 @@ class Attribute extends Model implements AttributeContract
     {
         return $this->attributes['meta_group'];
     }
+
     /**
      * Cast value to proper type.
      *
@@ -205,6 +206,7 @@ class Attribute extends Model implements AttributeContract
 
         $this->attributes['meta_key'] = $key;
     }
+
     /**
      * Set group of the meta attribute.
      *
@@ -220,6 +222,7 @@ class Attribute extends Model implements AttributeContract
 
         $this->attributes['meta_group'] = $group;
     }
+
     /**
      * Set type of the meta attribute.
      *
@@ -276,7 +279,7 @@ class Attribute extends Model implements AttributeContract
      * Determine whether the value type can be set to string.
      *
      * @param  mixed   $value
-     * @return boolean
+     * @return bool
      */
     protected function isStringable($value)
     {
@@ -318,7 +321,7 @@ class Attribute extends Model implements AttributeContract
      *
      * @param  mixed   $value
      * @param  string  $dir
-     * @return boolean
+     * @return bool
      */
     protected function hasMutator($value, $dir = 'setter', $type = null)
     {
